@@ -1,0 +1,71 @@
+entity Vehicle {
+* PK idVehicle : Integer
+---
+name : String
+brand : String
+image : String
+}
+
+entity VehicleModel {
+    PK idVehicleModel : Integer
+    ---
+    FK idVehicle : Integer
+    FK idEngine : Integer 
+    transmission : TransmissionType
+    builtDate : Date
+    VIN : String
+    plate : String
+    
+}
+
+entity Engine {
+   * PK name : String
+   ---
+    type : EngineType
+}
+
+entity Product {
+    * PK idProduct : Integer
+    ---
+    name : String
+    desc : String
+    price : Double
+    image : String
+}
+
+
+enum EngineType {
+    DIESEL,
+    PETROL,
+    BEV,
+    HEV
+    PHEV,
+    REEV
+}
+
+enum TransmissionType {
+    MT,
+    AT,
+    CVT,
+    iMT
+    DCT,
+    eCVT,
+    DSG
+}
+
+entity VM_Has_Product {
+    PK FK idModel : Integer
+    PK FK idProduct : Integer
+}
+
+
+/'Relationships'/
+Vehicle ||..|{ VehicleModel
+VehicleModel }|..|| Engine
+VehicleModel ..> TransmissionType
+VehicleModel ||..o{ VM_Has_Product
+Product ||..o{ VM_Has_Product
+Engine ..> EngineType
+
+@enduml
+
