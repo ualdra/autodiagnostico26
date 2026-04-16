@@ -1,0 +1,65 @@
+{
+  "Marca": "ABARTH",
+  "Modelo": "A1",
+  "Motorización": "1.5L L4 Turbocharged",
+  "FechaFabricacion": "2025-01-01",
+  "Imagen": "",
+  "Recambios": [
+    {
+      "Nombre": "Steering",
+      "Url": "https://www.rockauto.com/es/catalog/audi,2025,a1,999cc+l3+turbocharged,3458293,steering",
+      "Nodetype": "groupname",
+      "ParentGroupIndex": "10438",
+      "Piezas": []
+    },
+    {
+      "Nombre": "Steering",
+      "Url": "https://www.rockauto.com/es/catalog/audi,2025,a1,999cc+l3+turbocharged,3458293,steering,tie+rod+end,7428",
+      "Nodetype": "parttype",
+      "ParentGroupIndex": "10440",
+      "Piezas": []
+    },
+    {
+      "Nombre": "Brake & Wheel Hub",
+      "Url": "",
+      "Nodetype": "groupname",
+      "ParentGroupIndex": "10438",
+      "Piezas": []
+    },
+    {
+      "Nombre": "Wiper & Washer",
+      "Url": "",
+      "Nodetype": "groupname",
+      "ParentGroupIndex": "10438",
+      "Piezas": []
+    },
+    {
+      "Nombre": "Engine",
+      "Url": "",
+      "Nodetype": "groupname",
+      "ParentGroupIndex": "10438",
+      "Piezas": []
+    },
+    {
+      "Nombre": "Wheel",
+      "Url": "",
+      "Nodetype": "groupname",
+      "ParentGroupIndex": "10438",
+      "Piezas": []
+    },
+    {
+      "Nombre": "Suspension",
+      "Url": "",
+      "Nodetype": "groupname",
+      "ParentGroupIndex": "10438",
+      "Piezas": []
+    },
+    {
+      "Nombre": "Rótula de Dirección",
+      "Url": "https://www.rockauto.com/es/catalog/audi,2025,a1,999cc+l3+turbocharged,3458293,steering,tie+rod+end,7428",
+      "Nodetype": "parttype",
+      "ParentGroupIndex": "435",
+      "Piezas": []
+    }
+  ]
+}

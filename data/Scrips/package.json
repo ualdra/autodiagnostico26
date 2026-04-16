@@ -1,0 +1,22 @@
+{
+  "name": "simple-scrapper",
+  "version": "1.0.0",
+  "description": "Simple web scrapping example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Web",
+    "Scrapper",
+    "Tutorial"
+  ],
+  "author": "Manel Mena",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^24.37.5"
+  },
+  "devDependencies": {}
+}
