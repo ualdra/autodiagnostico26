@@ -36,7 +36,7 @@ public class VehicleScraperService {
          */
         @Transactional
         public void scrapeAndSave() throws IOException {
-                private final String url = "https://www.ultimatespecs.com/es";
+                final String url = "https://www.ultimatespecs.com/es";
                 log.info("Iniciando scraping de la URL: {}", url);
 
                 // 1. Configuración de Jsoup: Conexión y parseo
