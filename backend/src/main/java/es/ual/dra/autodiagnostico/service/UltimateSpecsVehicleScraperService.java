@@ -53,13 +53,20 @@ public class UltimateSpecsVehicleScraperService {
 
                 List<Map<String, Object>> allBrandsData = new ArrayList<>();
 
+                int debugCount = 0;
+
                 for (Element brand : brands) {
+
                         Map<String, Object> brandData = new HashMap<>();
 
                         String brandName = brand.select(".home_brand").text();
                         Element img = brand.selectFirst(".home_brand_logo img");
 
                         brandData.put("brandName", brandName);
+
+                        String brandFile = String.format("ultimatespecs-%s.json", brandName);
+                        Path outputPath = Paths.get("scraper-output", brandFile);
+                        Files.createDirectories(outputPath.getParent());
 
                         String spriteUrl = "";
                         int x = 0;
@@ -111,14 +118,13 @@ public class UltimateSpecsVehicleScraperService {
 
                         log.info("\nModelsData:\n{}", formatForDebug(modelsData));
 
-                        // Debug mode: only first brand
-                        break;
-                }
+                        Files.writeString(outputPath, toJson(allBrandsData));
+                        log.info("Preview JSON generated at {}", outputPath.toAbsolutePath());
 
-                Path outputPath = Paths.get("scraper-output", "ultimatespecs-first-elements.json");
-                Files.createDirectories(outputPath.getParent());
-                Files.writeString(outputPath, toJson(allBrandsData));
-                log.info("Preview JSON generated at {}", outputPath.toAbsolutePath());
+                        // Introduce a wait with a random between 1-10 seconds to avoid Cloudflare 520
+                        // error:
+                        CloudflareDelay.waitRandomTime();
+                }
         }
 
         /**
@@ -157,59 +163,51 @@ public class UltimateSpecsVehicleScraperService {
                 outputDir.mkdirs();
 
                 for (Element modelBlock : modelBlocks) {
-                        Element modelLink = modelBlock.children().selectFirst("a[href]");
-                        if (modelLink == null) {
-                                modelLink = modelBlock.selectFirst("a[href]");
-                        }
 
-                        if (modelLink == null) {
-                                continue;
-                        }
+                        for (Element subModelBlock : modelBlock.children()) {
 
-                        String modelUrl = modelLink.absUrl("href");
-                        if (modelUrl == null || modelUrl.isBlank()) {
-                                continue;
-                        }
-
-                        Map<String, Object> modelData = new HashMap<>();
-                        modelData.put("url", modelUrl);
-
-                        Element img = modelBlock.selectFirst("img");
-                        Element title = modelBlock.selectFirst("h2");
-
-                        Document modelDoc = Jsoup.connect(modelUrl)
-                                        .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-                                        .referrer(brandUrl)
-                                        .timeout(10000)
-                                        .get();
-
-                        List<Map<String, Object>> versionsList = new ArrayList<>();
-
-                        Elements versionBlocks = modelDoc.select("div.home_models_line");
-                        if (!versionBlocks.isEmpty()) {
-                                for (Element versionBlock : versionBlocks) {
-                                        Element versionLink = versionBlock.children().selectFirst("a[href]");
-                                        if (versionLink == null) {
-                                                versionLink = versionBlock.selectFirst("a[href]");
-                                        }
-
-                                        if (versionLink == null) {
-                                                continue;
-                                        }
-
-                                        String versionUrl = versionLink.absUrl("href");
-                                        if (versionUrl == null || versionUrl.isBlank()) {
-                                                continue;
-                                        }
-
-                                        System.out.println("Found version href: " + versionUrl);
-                                        versionsList.add(scrapeVersion(versionUrl));
+                                Element modelLink = subModelBlock.selectFirst("a[href]");
+                                if (modelLink == null) {
+                                        modelLink = subModelBlock.selectFirst("a[href]");
                                 }
-                        } else {
-                                Elements versionLinks = modelDoc.select(
-                                                ".versions_div a[href], .table_versions a[href], #versions a[href]");
-                                if (!versionLinks.isEmpty()) {
-                                        for (Element versionLink : versionLinks) {
+
+                                if (modelLink == null) {
+                                        System.out.println("SKIPPING MODEL BLOCK MODEL LINK!");
+                                        continue;
+                                }
+
+                                String modelUrl = modelLink.absUrl("href");
+                                if (modelUrl == null || modelUrl.isBlank()) {
+                                        System.out.println("SKIPPING MODEL BLOCK MODEL URL!");
+                                        continue;
+                                }
+
+                                Map<String, Object> modelData = new HashMap<>();
+                                modelData.put("url", modelUrl);
+
+                                Element img = subModelBlock.selectFirst("img");
+                                Element title = subModelBlock.selectFirst("h2");
+
+                                Document modelDoc = Jsoup.connect(modelUrl)
+                                                .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+                                                .referrer(brandUrl)
+                                                .timeout(10000)
+                                                .get();
+
+                                List<Map<String, Object>> versionsList = new ArrayList<>();
+
+                                Elements versionBlocks = modelDoc.select("div.home_models_line");
+                                if (!versionBlocks.isEmpty()) {
+                                        for (Element versionBlock : versionBlocks) {
+                                                Element versionLink = versionBlock.children().selectFirst("a[href]");
+                                                if (versionLink == null) {
+                                                        versionLink = versionBlock.selectFirst("a[href]");
+                                                }
+
+                                                if (versionLink == null) {
+                                                        continue;
+                                                }
+
                                                 String versionUrl = versionLink.absUrl("href");
                                                 if (versionUrl == null || versionUrl.isBlank()) {
                                                         continue;
@@ -219,34 +217,50 @@ public class UltimateSpecsVehicleScraperService {
                                                 versionsList.add(scrapeVersion(versionUrl));
                                         }
                                 } else {
-                                        System.out.println("NO VERSION BLOCKS FOUND, SCRAPING MODEL PAGE AS FALLBACK");
-                                        versionsList.add(scrapeVersion(modelUrl));
+                                        Elements versionLinks = modelDoc.select(
+                                                        ".versions_div a[href], .table_versions a[href], #versions a[href]");
+                                        if (!versionLinks.isEmpty()) {
+                                                for (Element versionLink : versionLinks) {
+                                                        String versionUrl = versionLink.absUrl("href");
+                                                        if (versionUrl == null || versionUrl.isBlank()) {
+                                                                continue;
+                                                        }
+
+                                                        System.out.println("Found version href: " + versionUrl);
+                                                        versionsList.add(scrapeVersion(versionUrl));
+                                                }
+                                        } else {
+                                                System.out.println(
+                                                                "NO VERSION BLOCKS FOUND, SCRAPING MODEL PAGE AS FALLBACK");
+                                                versionsList.add(scrapeVersion(modelUrl));
+                                        }
                                 }
-                        }
 
-                        modelData.put("versions", versionsList);
+                                modelData.put("versions", versionsList);
 
-                        String modelName = title != null ? title.text() : "unknown";
-                        modelData.put("modelName", modelName);
+                                String modelName = title != null ? title.text() : "unknown";
+                                modelData.put("modelName", modelName);
 
-                        String imageUrl = "";
-                        if (img != null) {
-                                imageUrl = img.attr("abs:src");
-                                if (imageUrl.isEmpty()) {
-                                        imageUrl = "https:" + img.attr("src");
+                                String imageUrl = "";
+                                if (img != null) {
+                                        imageUrl = img.attr("abs:src");
+                                        if (imageUrl.isEmpty()) {
+                                                imageUrl = "https:" + img.attr("src");
+                                        }
                                 }
+                                modelData.put("imageUrl", imageUrl);
+
+                                System.out.println(modelName + " -> " + imageUrl);
+
+                                if (!imageUrl.isEmpty()) {
+                                        downloadModelImage(imageUrl, brandUrl, modelName);
+                                }
+                                modelsData.add(modelData);
+                                // Introduce a wait with a random between 1-10 seconds to avoid Cloudflare 520
+                                // error:
+                                CloudflareDelay.waitRandomTime();
                         }
-                        modelData.put("imageUrl", imageUrl);
 
-                        System.out.println(modelName + " -> " + imageUrl);
-
-                        if (!imageUrl.isEmpty()) {
-                                downloadModelImage(imageUrl, brandUrl, modelName);
-                        }
-                        modelsData.add(modelData);
-
-                        // Debug mode: only first model
-                        break;
                 }
 
                 System.out.println("SCRAPED MODELS FOR BRAND EXECUTION FINISHED");
