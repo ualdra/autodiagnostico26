@@ -53,79 +53,77 @@ public class UltimateSpecsVehicleScraperService {
 
                 List<Map<String, Object>> allBrandsData = new ArrayList<>();
 
+                int debugCount = 0;
+
                 for (Element brand : brands) {
 
-                        try {
-                                Map<String, Object> brandData = new HashMap<>();
+                        Map<String, Object> brandData = new HashMap<>();
 
-                                String brandName = brand.select(".home_brand").text();
-                                Element img = brand.selectFirst(".home_brand_logo img");
+                        String brandName = brand.select(".home_brand").text();
+                        Element img = brand.selectFirst(".home_brand_logo img");
 
-                                Path outputPath = Paths.get("scraper-output", "ultimatespecs-" + brandName + ".json");
-                                Files.createDirectories(outputPath.getParent());
+                        brandData.put("brandName", brandName);
 
-                                log.info("Preview JSON generated at {}", outputPath.toAbsolutePath());
+                        String brandFile = String.format("ultimatespecs-%s.json", brandName);
+                        Path outputPath = Paths.get("scraper-output", brandFile);
+                        Files.createDirectories(outputPath.getParent());
 
-                                brandData.put("brandName", brandName);
+                        String spriteUrl = "";
+                        int x = 0;
+                        int y = 0;
 
-                                String spriteUrl = "";
-                                int x = 0;
-                                int y = 0;
+                        if (img != null) {
+                                String style = img.attr("style");
 
-                                if (img != null) {
-                                        String style = img.attr("style");
+                                int urlStart = style.indexOf("url('");
+                                int urlEnd = style.indexOf("')", urlStart);
 
-                                        int urlStart = style.indexOf("url('");
-                                        int urlEnd = style.indexOf("')", urlStart);
+                                if (urlStart != -1 && urlEnd != -1) {
+                                        spriteUrl = style.substring(urlStart + 5, urlEnd);
+                                }
 
-                                        if (urlStart != -1 && urlEnd != -1) {
-                                                spriteUrl = style.substring(urlStart + 5, urlEnd);
-                                        }
+                                String[] parts = style.split(" ");
 
-                                        String[] parts = style.split(" ");
+                                for (String p : parts) {
+                                        if (p.endsWith("px")) {
+                                                int val = Math.abs(
+                                                                Integer.parseInt(p.replace("px", "").replace(";", "")));
 
-                                        for (String p : parts) {
-                                                if (p.endsWith("px")) {
-                                                        int val = Math.abs(
-                                                                        Integer.parseInt(p.replace("px", "")
-                                                                                        .replace(";", "")));
-
-                                                        if (x == 0) {
-                                                                x = val;
-                                                        } else {
-                                                                y = val;
-                                                        }
+                                                if (x == 0) {
+                                                        x = val;
+                                                } else {
+                                                        y = val;
                                                 }
                                         }
                                 }
-
-                                if (!spriteUrl.isEmpty()) {
-                                        BufferedImage sprite = ImageIO.read(
-                                                        URI.create("https://www.ultimatespecs.com" + spriteUrl)
-                                                                        .toURL());
-
-                                        BufferedImage logo = sprite.getSubimage(x, y, 60, 60);
-
-                                        File out = new File(outputDir,
-                                                        brandName.replaceAll("[^a-zA-Z0-9]", "_") + ".png");
-
-                                        ImageIO.write(logo, "png", out);
-                                }
-
-                                System.out.println("Brand: " + brandName);
-
-                                List<Map<String, Object>> modelsData = scrapeModelsForBrand(brand);
-                                brandData.put("models", modelsData);
-                                allBrandsData.add(brandData);
-
-                                log.info("\nModelsData:\n{}", formatForDebug(modelsData));
-
-                                Files.writeString(outputPath, toJson(allBrandsData));
-
-                        } catch (Exception e) {
-
                         }
 
+                        if (!spriteUrl.isEmpty()) {
+                                BufferedImage sprite = ImageIO.read(
+                                                URI.create("https://www.ultimatespecs.com" + spriteUrl).toURL());
+
+                                BufferedImage logo = sprite.getSubimage(x, y, 60, 60);
+
+                                File out = new File(outputDir,
+                                                brandName.replaceAll("[^a-zA-Z0-9]", "_") + ".png");
+
+                                ImageIO.write(logo, "png", out);
+                        }
+
+                        System.out.println("Brand: " + brandName);
+
+                        List<Map<String, Object>> modelsData = scrapeModelsForBrand(brand);
+                        brandData.put("models", modelsData);
+                        allBrandsData.add(brandData);
+
+                        log.info("\nModelsData:\n{}", formatForDebug(modelsData));
+
+                        Files.writeString(outputPath, toJson(allBrandsData));
+                        log.info("Preview JSON generated at {}", outputPath.toAbsolutePath());
+
+                        // Introduce a wait with a random between 1-10 seconds to avoid Cloudflare 520
+                        // error:
+                        CloudflareDelay.waitRandomTime();
                 }
         }
 
@@ -165,67 +163,51 @@ public class UltimateSpecsVehicleScraperService {
                 outputDir.mkdirs();
 
                 for (Element modelBlock : modelBlocks) {
-                        Elements modelLinks = modelBlock.children().select("a[href]");
-                        if (modelLinks == null) {
-                                modelLinks = modelBlock.select("a[href]");
-                        }
 
-                        if (modelLinks == null) {
-                                continue;
-                        }
-                        List<String> modelUrls = new ArrayList<>();
-                        for (Element modelLink : modelLinks) {
-                                String modelUrl = modelLink.absUrl("href");
-                                if (modelUrl == null || modelUrl.isBlank()) {
+                        for (Element subModelBlock : modelBlock.children()) {
+
+                                Element modelLink = subModelBlock.selectFirst("a[href]");
+                                if (modelLink == null) {
+                                        modelLink = subModelBlock.selectFirst("a[href]");
+                                }
+
+                                if (modelLink == null) {
+                                        System.out.println("SKIPPING MODEL BLOCK MODEL LINK!");
                                         continue;
                                 }
-                                modelUrls.add(modelUrl);
 
-                        }
+                                String modelUrl = modelLink.absUrl("href");
+                                if (modelUrl == null || modelUrl.isBlank()) {
+                                        System.out.println("SKIPPING MODEL BLOCK MODEL URL!");
+                                        continue;
+                                }
 
-                        Map<String, Object> modelData = new HashMap<>();
-                        modelData.put("url", modelUrls);
+                                Map<String, Object> modelData = new HashMap<>();
+                                modelData.put("url", modelUrl);
 
-                        Element img = modelBlock.selectFirst("img");
-                        Element title = modelBlock.selectFirst("h2");
+                                Element img = subModelBlock.selectFirst("img");
+                                Element title = subModelBlock.selectFirst("h2");
 
-                        Document modelDoc;
-                        for (String modelUrl : modelUrls) {
-
-                                modelDoc = Jsoup.connect(modelUrl)
+                                Document modelDoc = Jsoup.connect(modelUrl)
                                                 .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
                                                 .referrer(brandUrl)
                                                 .timeout(10000)
                                                 .get();
-                        }
 
-                        List<Map<String, Object>> versionsList = new ArrayList<>();
+                                List<Map<String, Object>> versionsList = new ArrayList<>();
 
-                        Elements versionBlocks = modelDoc.select("div.home_models_line");
-                        if (!versionBlocks.isEmpty()) {
-                                for (Element versionBlock : versionBlocks) {
-                                        Element versionLink = versionBlock.children().selectFirst("a[href]");
-                                        if (versionLink == null) {
-                                                versionLink = versionBlock.selectFirst("a[href]");
-                                        }
+                                Elements versionBlocks = modelDoc.select("div.home_models_line");
+                                if (!versionBlocks.isEmpty()) {
+                                        for (Element versionBlock : versionBlocks) {
+                                                Element versionLink = versionBlock.children().selectFirst("a[href]");
+                                                if (versionLink == null) {
+                                                        versionLink = versionBlock.selectFirst("a[href]");
+                                                }
 
-                                        if (versionLink == null) {
-                                                continue;
-                                        }
+                                                if (versionLink == null) {
+                                                        continue;
+                                                }
 
-                                        String versionUrl = versionLink.absUrl("href");
-                                        if (versionUrl == null || versionUrl.isBlank()) {
-                                                continue;
-                                        }
-
-                                        System.out.println("Found version href: " + versionUrl);
-                                        versionsList.add(scrapeVersion(versionUrl));
-                                }
-                        } else {
-                                Elements versionLinks = modelDoc.select(
-                                                ".versions_div a[href], .table_versions a[href], #versions a[href]");
-                                if (!versionLinks.isEmpty()) {
-                                        for (Element versionLink : versionLinks) {
                                                 String versionUrl = versionLink.absUrl("href");
                                                 if (versionUrl == null || versionUrl.isBlank()) {
                                                         continue;
@@ -235,34 +217,50 @@ public class UltimateSpecsVehicleScraperService {
                                                 versionsList.add(scrapeVersion(versionUrl));
                                         }
                                 } else {
-                                        System.out.println("NO VERSION BLOCKS FOUND, SCRAPING MODEL PAGE AS FALLBACK");
-                                        versionsList.add(scrapeVersion(modelUrl));
+                                        Elements versionLinks = modelDoc.select(
+                                                        ".versions_div a[href], .table_versions a[href], #versions a[href]");
+                                        if (!versionLinks.isEmpty()) {
+                                                for (Element versionLink : versionLinks) {
+                                                        String versionUrl = versionLink.absUrl("href");
+                                                        if (versionUrl == null || versionUrl.isBlank()) {
+                                                                continue;
+                                                        }
+
+                                                        System.out.println("Found version href: " + versionUrl);
+                                                        versionsList.add(scrapeVersion(versionUrl));
+                                                }
+                                        } else {
+                                                System.out.println(
+                                                                "NO VERSION BLOCKS FOUND, SCRAPING MODEL PAGE AS FALLBACK");
+                                                versionsList.add(scrapeVersion(modelUrl));
+                                        }
                                 }
-                        }
 
-                        modelData.put("versions", versionsList);
+                                modelData.put("versions", versionsList);
 
-                        String modelName = title != null ? title.text() : "unknown";
-                        modelData.put("modelName", modelName);
+                                String modelName = title != null ? title.text() : "unknown";
+                                modelData.put("modelName", modelName);
 
-                        String imageUrl = "";
-                        if (img != null) {
-                                imageUrl = img.attr("abs:src");
-                                if (imageUrl.isEmpty()) {
-                                        imageUrl = "https:" + img.attr("src");
+                                String imageUrl = "";
+                                if (img != null) {
+                                        imageUrl = img.attr("abs:src");
+                                        if (imageUrl.isEmpty()) {
+                                                imageUrl = "https:" + img.attr("src");
+                                        }
                                 }
+                                modelData.put("imageUrl", imageUrl);
+
+                                System.out.println(modelName + " -> " + imageUrl);
+
+                                if (!imageUrl.isEmpty()) {
+                                        downloadModelImage(imageUrl, brandUrl, modelName);
+                                }
+                                modelsData.add(modelData);
+                                // Introduce a wait with a random between 1-10 seconds to avoid Cloudflare 520
+                                // error:
+                                CloudflareDelay.waitRandomTime();
                         }
-                        modelData.put("imageUrl", imageUrl);
 
-                        System.out.println(modelName + " -> " + imageUrl);
-
-                        if (!imageUrl.isEmpty()) {
-                                downloadModelImage(imageUrl, brandUrl, modelName);
-                        }
-                        modelsData.add(modelData);
-
-                        // Debug mode: only first model
-                        break;
                 }
 
                 System.out.println("SCRAPED MODELS FOR BRAND EXECUTION FINISHED");
