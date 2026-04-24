@@ -10,16 +10,7 @@ import es.ual.dra.autodiagnostico.service.UltimateSpecsVehicleScraperService;
 public class AutoDiagnosticoApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(AutoDiagnosticoApplication.class, args);
-		ApplicationContext context = SpringApplication.run(AutoDiagnosticoApplication.class, args);
-		UltimateSpecsVehicleScraperService vss = context.getBean(UltimateSpecsVehicleScraperService.class);
-		try {
-			vss.scrapeAndSave();
-			System.out.println("NO ERROR");
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("ERROR");
-		}
+		SpringApplication.run(AutoDiagnosticoApplication.class, args);
 	}
 
 }
