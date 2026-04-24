@@ -1,0 +1,40 @@
+<section class="chat-card">
+  <header class="chat-head">
+    <div>
+      <h2>Chat de seguimiento</h2>
+      <p>Comunicación entre mecánico y cliente.</p>
+    </div>
+
+    <div class="presence" [class.presence--offline]="!userOnline">
+      <span class="dot" aria-hidden="true"></span>
+      <span>{{ userOnline ? 'Usuario online' : 'Usuario offline' }}</span>
+
+      @if (!userOnline && unreadCount > 0) {
+        <span class="unread-chip" aria-label="Mensajes sin leer">{{ unreadCount }} por leer</span>
+      }
+    </div>
+  </header>
+
+  <div class="chat-body" role="log" aria-live="polite">
+    @for (msg of messages; track msg.id) {
+      <article class="bubble" [class.bubble--user]="msg.author === 'usuario'">
+        <p>{{ msg.text }}</p>
+        <footer>
+          <span>{{ msg.author === 'mecanico' ? 'Mecánico' : 'Tú' }}</span>
+          <time>{{ msg.at }}</time>
+        </footer>
+      </article>
+    }
+  </div>
+
+  <form class="chat-input" (ngSubmit)="sendMessage()">
+    <input
+      type="text"
+      name="draft"
+      [(ngModel)]="draft"
+      placeholder="Escribe un mensaje..."
+      aria-label="Escribir mensaje"
+    />
+    <button type="submit">Enviar</button>
+  </form>
+</section>

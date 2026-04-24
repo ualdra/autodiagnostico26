@@ -1,0 +1,19 @@
+<section class="seguimiento-shell">
+  <header class="seguimiento-head">
+    <h1>Seguimiento</h1>
+    <p>Estado de reparación y comunicación directa.</p>
+  </header>
+
+  <nav class="seguimiento-nav" aria-label="Navegación de seguimiento">
+    <a routerLink="chat" routerLinkActive="tab--active" class="tab">
+      Chat
+      @if (!userOnline && unreadCount > 0) {
+        <span class="badge" aria-label="Mensajes pendientes">{{ unreadCount }}</span>
+      }
+    </a>
+  </nav>
+
+  <div class="seguimiento-content">
+    <router-outlet />
+  </div>
+</section>
