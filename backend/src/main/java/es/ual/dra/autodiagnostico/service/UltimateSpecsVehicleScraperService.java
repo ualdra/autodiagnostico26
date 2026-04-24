@@ -66,7 +66,7 @@ public class UltimateSpecsVehicleScraperService {
 
                         // 2. Logic to skip until Dodge is hit
                         if (!foundDodge) {
-                                if (brandName.equalsIgnoreCase("Nissan")) {
+                                if (brandName.equalsIgnoreCase("Volkswagen")) {
                                         foundDodge = true;
                                 } else {
                                         continue;
