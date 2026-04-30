@@ -24,7 +24,6 @@ interface ChatMessage {
 })
 export class SeguimientoChatComponent implements OnInit, OnDestroy {
   private readonly roomType: ChatRoomType = 'SEGUIMIENTO';
-  private readonly participantId = 1;
   private messageRefreshTimerId: number | null = null;
   private latestMessageId: number | null = null;
 
@@ -33,6 +32,14 @@ export class SeguimientoChatComponent implements OnInit, OnDestroy {
   sending = false;
 
   messages: ChatMessage[] = [];
+  
+  get currentUserId(): number {
+    return this.authStateService.userId() ?? 0;
+  }
+  
+  get participantId(): number {
+    return this.currentUserId;
+  }
 
   constructor(
     private readonly chatApiService: ChatApiService,
@@ -173,10 +180,13 @@ export class SeguimientoChatComponent implements OnInit, OnDestroy {
   private toViewMessage(message: ChatMessageResponse): ChatMessage {
     const parsedDate = new Date(message.createdAt);
     const hasValidDate = !Number.isNaN(parsedDate.getTime());
+    
+    // Determinar si el mensaje es mío basándome en participantId y senderRole
+    const isMyMessage = message.participantId === this.currentUserId;
 
     return {
       id: message.id,
-      author: message.senderRole === 'MECANICO' ? 'mecanico' : 'usuario',
+      author: isMyMessage ? 'usuario' : 'mecanico',
       text: message.commentText,
       at: hasValidDate ? parsedDate.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }) : '--:--',
       read: message.readByUser
