@@ -35,6 +35,7 @@ export interface ChatMessageRequest {
   participantId: number;
   roomType: ChatRoomType;
   senderRole: ChatSenderRole;
+  sessionUuid: string;
   commentText: string;
 }
 
@@ -42,6 +43,7 @@ export interface ChatMessageResponse {
   id: number;
   roomType: ChatRoomType;
   participantId: number;
+  sessionUuid: string;
   senderRole: ChatSenderRole;
   commentText: string;
   wordCount: number;

@@ -15,6 +15,8 @@ import es.ual.dra.autodiagnostico.model.entitity.chat.ChatSenderRole;
 @Repository
 public interface ChatMessageRepository extends JpaRepository<ChatMessage, Long> {
 
+    boolean existsByRoomType(ChatRoomType roomType);
+
     List<ChatMessage> findTop100ByRoomTypeOrderByCreatedAtDesc(ChatRoomType roomType);
 
     List<ChatMessage> findTop100ByRoomTypeAndIdGreaterThanOrderByIdAsc(ChatRoomType roomType, Long id);

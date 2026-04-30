@@ -20,12 +20,16 @@
       <article class="bubble" [class.bubble--user]="msg.author === 'usuario'">
         <p>{{ msg.text }}</p>
         <footer>
-          <span>{{ msg.author === 'mecanico' ? 'Mecánico' : 'Tú' }}</span>
+          <span>{{ msg.author === 'mecanico' ? 'Mecánico' : 'Usuario' }}{{ msg.own ? ' (tú)' : '' }}</span>
           <time>{{ msg.at }}</time>
         </footer>
       </article>
     }
   </div>
+
+  @if (!canSend) {
+    <p class="chat-help">Solo el mecánico puede iniciar la conversación.</p>
+  }
 
   <form class="chat-input" (ngSubmit)="sendMessage()">
     <input
@@ -35,6 +39,6 @@
       placeholder="Escribe un mensaje..."
       aria-label="Escribir mensaje"
     />
-    <button type="submit">Enviar</button>
+    <button type="submit" [disabled]="sending || !canSend">Enviar</button>
   </form>
 </section>
