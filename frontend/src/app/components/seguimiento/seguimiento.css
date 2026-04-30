@@ -1,0 +1,59 @@
+:host {
+  display: block;
+}
+
+.seguimiento-shell {
+  max-width: 1024px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+.seguimiento-head h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 1.4rem;
+}
+
+.seguimiento-head p {
+  margin-top: 0.35rem;
+  color: #6b7280;
+}
+
+.seguimiento-nav {
+  margin-top: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 600;
+}
+
+.tab--active {
+  color: #1a6bbd;
+  border-bottom-color: #1a6bbd;
+}
+
+.badge {
+  min-width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  background: #dc2626;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.seguimiento-content {
+  margin-top: 1rem;
+}
