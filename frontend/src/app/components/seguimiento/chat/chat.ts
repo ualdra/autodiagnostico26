@@ -2,7 +2,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, NgZone, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ChatApiService } from '../../../services/chat-api.service';
-import { ChatMessageRequest, ChatMessageResponse, ChatRoomType } from '../../../services/api.models';
+import { ChatMessageRequest, ChatMessageResponse, ChatRoomType, ChatSenderRole } from '../../../services/api.models';
 import { AuthStateService } from '../../../services/auth-state.service';
 
 type ChatAuthor = 'mecanico' | 'usuario';
@@ -10,6 +10,7 @@ type ChatAuthor = 'mecanico' | 'usuario';
 interface ChatMessage {
   id: number;
   author: ChatAuthor;
+  own: boolean;
   text: string;
   at: string;
   read: boolean;
@@ -24,7 +25,6 @@ interface ChatMessage {
 })
 export class SeguimientoChatComponent implements OnInit, OnDestroy {
   private readonly roomType: ChatRoomType = 'SEGUIMIENTO';
-  private readonly participantId = 1;
   private messageRefreshTimerId: number | null = null;
   private latestMessageId: number | null = null;
 
@@ -33,6 +33,36 @@ export class SeguimientoChatComponent implements OnInit, OnDestroy {
   sending = false;
 
   messages: ChatMessage[] = [];
+  
+  get currentUserId(): number {
+    return this.authStateService.userId() ?? 0;
+  }
+  
+  get participantId(): number {
+    return this.currentUserId;
+  }
+
+  get isMechanic(): boolean {
+    const role = this.authStateService.role();
+    return role === 'TALLER' || role === 'ADMIN';
+  }
+
+  get senderRole(): ChatSenderRole {
+    return this.isMechanic ? 'MECANICO' : 'USUARIO';
+  }
+
+  get canSend(): boolean {
+    if (this.isMechanic) {
+      return true;
+    }
+    return this.messages.some((message) => message.author === 'mecanico');
+  }
+
+  get sessionUuid(): string {
+    // Usar un UUID único por usuario - en producción, esto debería venir del servidor
+    const userId = this.currentUserId;
+    return `seguimiento-user-${userId}`;
+  }
 
   constructor(
     private readonly chatApiService: ChatApiService,
@@ -47,15 +77,24 @@ export class SeguimientoChatComponent implements OnInit, OnDestroy {
       return;
     }
 
+    // Validar que tenemos un usuario logueado
+    const userId = this.currentUserId;
+    if (!userId || userId === 0) {
+      console.error('Chat: No hay usuario logueado válido. UserId:', userId);
+      this.userOnline = false;
+      return;
+    }
+
     this.refreshPresence();
-    this.chatApiService.joinRoom(this.roomType, this.participantId).subscribe({
+    this.chatApiService.joinRoom(this.roomType, userId).subscribe({
       next: () => {
         this.userOnline = true;
         this.fetchMessages();
         this.startMessageRefresh();
         this.chatApiService.markReadByUser(this.roomType).subscribe();
       },
-      error: () => {
+      error: (err) => {
+        console.error('Error joining chat room:', err);
         this.userOnline = false;
       }
     });
@@ -66,8 +105,13 @@ export class SeguimientoChatComponent implements OnInit, OnDestroy {
       return;
     }
 
+    const userId = this.currentUserId;
+    if (!userId || userId === 0) {
+      return;
+    }
+
     this.stopMessageRefresh();
-    this.chatApiService.leaveRoom(this.roomType, this.participantId).subscribe();
+    this.chatApiService.leaveRoom(this.roomType, userId).subscribe();
   }
 
   get unreadCount(): number {
@@ -80,12 +124,24 @@ export class SeguimientoChatComponent implements OnInit, OnDestroy {
       return;
     }
 
+    if (!this.canSend) {
+      console.warn('Solo el mecanico puede iniciar la conversacion');
+      return;
+    }
+
+    const userId = this.currentUserId;
+    if (!userId || userId === 0) {
+      console.error('Cannot send message: No valid user ID');
+      return;
+    }
+
     this.sending = true;
 
     const payload: ChatMessageRequest = {
-      participantId: this.participantId,
+      participantId: userId,
       roomType: this.roomType,
-      senderRole: 'USUARIO',
+      senderRole: this.senderRole,
+      sessionUuid: this.sessionUuid,
       commentText: value
     };
 
@@ -93,13 +149,13 @@ export class SeguimientoChatComponent implements OnInit, OnDestroy {
       next: (sentMessage) => {
         this.sending = false;
         this.upsertMessages([sentMessage]);
+        this.draft = '';
       },
-      error: () => {
+      error: (err) => {
+        console.error('Error sending message:', err);
         this.sending = false;
       }
     });
-
-    this.draft = '';
   }
 
   private fetchMessages(): void {
@@ -124,7 +180,12 @@ export class SeguimientoChatComponent implements OnInit, OnDestroy {
   }
 
   private refreshPresence(): void {
-    this.chatApiService.isUserOnline(this.roomType, this.participantId).subscribe({
+    const userId = this.currentUserId;
+    if (!userId || userId === 0) {
+      return;
+    }
+
+    this.chatApiService.isUserOnline(this.roomType, userId).subscribe({
       next: (isOnline) => {
         this.userOnline = isOnline;
       }
@@ -173,10 +234,14 @@ export class SeguimientoChatComponent implements OnInit, OnDestroy {
   private toViewMessage(message: ChatMessageResponse): ChatMessage {
     const parsedDate = new Date(message.createdAt);
     const hasValidDate = !Number.isNaN(parsedDate.getTime());
+    
+    const isMyMessage = message.participantId === this.currentUserId;
+    const isMechanicMessage = message.senderRole === 'MECANICO';
 
     return {
       id: message.id,
-      author: message.senderRole === 'MECANICO' ? 'mecanico' : 'usuario',
+      author: isMechanicMessage ? 'mecanico' : 'usuario',
+      own: isMyMessage,
       text: message.commentText,
       at: hasValidDate ? parsedDate.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' }) : '--:--',
       read: message.readByUser

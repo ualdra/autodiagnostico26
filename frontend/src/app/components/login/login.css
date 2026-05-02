@@ -141,6 +141,17 @@
   outline: none;
 }
 
+.field--error {
+  border-color: rgba(248, 113, 113, 0.75) !important;
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.12);
+}
+
+.field-error {
+  color: #fecaca;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
 .field input::placeholder {
   color: rgba(255, 255, 255, 0.56);
 }

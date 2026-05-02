@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
   selectedRole: AuthUserRole = 'USER';
   keepSession = true;
   errorMessage = '';
+  emailFieldError = '';
   isSubmitting = false;
 
   readonly roleCards = [
@@ -54,6 +55,7 @@ export class LoginComponent implements OnInit {
   switchMode(nextMode: 'login' | 'register'): void {
     this.mode = nextMode;
     this.errorMessage = '';
+    this.emailFieldError = '';
     void this.router.navigate([nextMode === 'login' ? '/login' : '/registro']);
   }
 
@@ -107,6 +109,7 @@ export class LoginComponent implements OnInit {
 
     if (!email) {
       this.errorMessage = 'Escribe tu correo para crear la cuenta.';
+      this.emailFieldError = '';
       return;
     }
 
@@ -127,11 +130,19 @@ export class LoginComponent implements OnInit {
 
     this.isSubmitting = true;
     this.errorMessage = '';
+    this.emailFieldError = '';
 
     this.authApiService.register({ fullName, email, password, role: this.selectedRole }).subscribe({
       next: (user) => this.completeSession(user),
       error: (error) => {
         this.isSubmitting = false;
+        if (this.isConflictError(error)) {
+          this.emailFieldError = 'Ya existe una cuenta con ese correo. Usa otro email para registrarte.';
+          this.errorMessage = '';
+          return;
+        }
+
+        this.emailFieldError = '';
         this.errorMessage = this.extractErrorMessage(error, 'No se pudo crear la cuenta.');
       }
     });
@@ -163,5 +174,9 @@ export class LoginComponent implements OnInit {
     }
 
     return fallbackMessage;
+  }
+
+  private isConflictError(error: unknown): boolean {
+    return typeof error === 'object' && error !== null && 'status' in error && (error as { status?: number }).status === 409;
   }
 }

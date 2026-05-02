@@ -25,6 +25,9 @@ public class ChatMessageRequestDTO {
     @NotBlank(message = "El rol del remitente es obligatorio")
     private String senderRole;
 
+    @NotBlank(message = "El UUID de sesión es obligatorio")
+    private String sessionUuid;
+
     @NotBlank(message = "El comentario es obligatorio")
     @Size(max = 6000, message = "El comentario excede el tamano permitido")
     private String commentText;

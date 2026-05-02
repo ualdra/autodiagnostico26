@@ -13,15 +13,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ChatMessageResponseDTO {
-
+public class TallerAssignmentDTO {
     private Long id;
-    private String roomType;
-    private Long participantId;
+    private Long tallerId;
+    private Long clientId;
     private String sessionUuid;
-    private String senderRole;
-    private String commentText;
-    private Integer wordCount;
-    private boolean readByUser;
+    private boolean active;
+    private String description;
     private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }
