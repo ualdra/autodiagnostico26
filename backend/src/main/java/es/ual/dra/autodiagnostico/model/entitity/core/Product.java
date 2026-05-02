@@ -10,6 +10,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import java.util.List;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.JoinTable;
@@ -23,6 +24,7 @@ import jakarta.persistence.FetchType;
 @Table(name = "product")
 @Getter
 @Setter
+@ToString(exclude = "vehicles")
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

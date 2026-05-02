@@ -15,9 +15,11 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString(exclude = "vehicleModels")
 @Entity
 @Table(name = "engine")
 @NoArgsConstructor

@@ -6,7 +6,7 @@
 # ============  Agentic SDD files from Speckit ============ 
 .agent/
 .specify/
-
+.specs/
 
 # ============ DEPENDENCIAS ============
 node_modules/

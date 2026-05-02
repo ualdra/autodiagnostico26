@@ -1,0 +1,2283 @@
+{
+  "models": [
+    {
+      "modelName": "Mii",
+      "versions": [
+        {
+          "table_versions": [
+            {
+              "Eléctrico": "Mii electric Ficha Tecnica",
+              "Potencia": "83 hp / 61 kW",
+              "Año": "2019"
+            },
+            {
+              "Motores de Gasolina": "Mii 1.0 12V 60HP Ficha Tecnica",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "2012"
+            }
+          ],
+          "actualFinalModelName": "Seat Mii Ficha Tecnica",
+          "specifications": {
+            "Batalla:": "242.1 cm / 95.31 pulgadas",
+            "Consumos Medio:": "4.2 L/100 km",
+            "Alto:": "148.1 cm / 58.31 pulgadas",
+            "Potencia:": "de 60 PS a 83 PS",
+            "Largo:": "355.6 cm / 140 pulgadas",
+            "Ancho:": "164.5 cm / 64.76 pulgadas",
+            "Período de producción:": "2012",
+            "Cilindrada:": "999 cm3",
+            "Peso:": "929 kg"
+          }
+        }
+      ]
+    },
+    {
+      "modelName": "Ibiza",
+      "versions": [
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza 1.0 EcoTSI 110HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "2021"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 EcoTSI 95HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "95 hp / 70 kW",
+              "Año": "2021"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 MPI 80HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "80 hp / 59 kW",
+              "Año": "2025"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 MPI 80HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "80 hp / 59 kW",
+              "Año": "2025"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 MPI EVO Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "80 hp / 59 kW",
+              "Año": "2021"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 TSI 115HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "115 hp / 85 kW",
+              "Año": "2025"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 TSI 115HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "115 hp / 85 kW",
+              "Año": "2025"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 TSI 115HP DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "115 hp / 85 kW",
+              "Año": "2025"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 TSI 115HP DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "115 hp / 85 kW",
+              "Año": "2025"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 TSI 95HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "95 hp / 70 kW",
+              "Año": "2024"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 TSI 95HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "95 hp / 70 kW",
+              "Año": "2025"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.5 TSI 150HP FR DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1498 cm3 (91.4 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2025"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.5 TSI 150HP FR DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1498 cm3 (91.4 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2025"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 5 - 2022 Update (2021 - Presente)",
+          "specifications": {
+            "Batalla:": "256.4 cm / 100.94 pulgadas",
+            "Consumos Medio:": "de 5.1 L/100 km / 55 MPG UK / 46 MPG US a 5.7 L/100 km / 50 MPG UK / 41 MPG US",
+            "Alto:": "142.9 cm / 56.26 pulgadas",
+            "Potencia:": "de 80 PS / 79 HP / 59 kW a 150 PS / 148 HP / 110 kW",
+            "Peso de remolque:": "de 800 kg / 1764 lbs a 1200 kg / 2646 lbs",
+            "Largo:": "405.9 cm / 159.8 pulgadas",
+            "Ancho:": "178.0 cm / 70.08 pulgadas",
+            "Período de producción:": "de 2021 a a presente",
+            "Cilindrada:": "de 999 cm3 / 61 cu-in a 1498 cm3 / 91.4 cu-in",
+            "Peso:": "de 1111 kg / 2449 lbs a 1231 kg / 2714 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M11961/Ibiza-2022"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza 1.0 75HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2017"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 80HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "80 hp / 59 kW",
+              "Año": "2019"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 EcoTSI 115HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "116 hp / 85 kW",
+              "Año": "2017"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 EcoTSI 115HP FR Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "116 hp / 85 kW",
+              "Año": "2017"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 EcoTSI 95HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "95 hp / 70 kW",
+              "Año": "2017"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 TSI 110HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "2020"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 TSI 110HP DSG-7 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "2020"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.0 TSI 115HP DSG-7 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "115 hp / 85 kW",
+              "Año": "2020"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.5 TSI 150HP DSG-7 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1498 cm3 (91.4 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2020"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 1.5 TSI EVO Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1498 cm3 (91.4 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2017"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 1.6 TDI Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "95 hp / 70 kW",
+              "Año": "2017"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 1.6 TDI DSG-7 Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "95 hp / 70 kW",
+              "Año": "2018"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Otros": "Ibiza 1.0 TGI 90HP Ficha Tecnica",
+              "Año": "2018"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 5 - 2018 New Model (2017 - 2021)",
+          "specifications": {
+            "Batalla:": "256.4 cm / 100.94 pulgadas",
+            "Consumos Medio:": "de 5 L/100 km / 56 MPG UK / 47 MPG US a 6.2 L/100 km / 46 MPG UK / 38 MPG US",
+            "Alto:": "144.4 cm / 56.85 pulgadas",
+            "Potencia:": "de 75 PS / 74 HP / 55 kW a 150 PS / 148 HP / 110 kW",
+            "Peso de remolque:": "de 800 kg / 1764 lbs a 1200 kg / 2646 lbs",
+            "Largo:": "405.9 cm / 159.8 pulgadas",
+            "Ancho:": "178.0 cm / 70.08 pulgadas",
+            "Período de producción:": "de 2017 a 2021",
+            "Cilindrada:": "de 999 cm3 / 61 cu-in a 1598 cm3 / 97.5 cu-in",
+            "Peso:": "de 1091 kg / 2405 lbs a 1273 kg / 2806 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M9384/Ibiza-2018"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 12v 60HP Reference Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1198 cm3 (73.1 cu-in)",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 12v 70HP Reference Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1198 cm3 (73.1 cu-in)",
+              "Potencia": "69 hp / 51 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 12v 70HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1198 cm3 (73.1 cu-in)",
+              "Potencia": "69 hp / 51 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 105HP FR Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 105HP FR DSG 7 speed Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 105HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 105HP FR I-TECH 30 Anniversary DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 105HP Style Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 105HP Style DSG 7 speed Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 105HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 105HP Style I-TECH 30 Anniversary DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 85HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.2 TSI 85HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.4 85HP Reference Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.4 85HP Style Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.4 TSI 150HP FR DSG 7 speed Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.4 TSI 150HP FR I-TECH 30 Anniversary DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.4 TSI ACT 140HP FR Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1395 cm3 (85.1 cu-in)",
+              "Potencia": "140 hp / 103 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J 1.4 TSI ACT 140HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1395 cm3 (85.1 cu-in)",
+              "Potencia": "140 hp / 103 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J FR 1.4 TSI 150HP DSG 7 speeds Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Music 1.4 16v 85HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2009"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Reference 1.2 12v 70HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1198 cm3 (73.1 cu-in)",
+              "Potencia": "69 hp / 51 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Reference 1.4 16v 85HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Sport 1.2 TSI 105HP DSG 7 sp Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Sport 1.2 TSI 105HP Start Stop Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Sport 1.6 16v 105HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Sport 1.6 16v 105HP DSG 7 speeds Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Style 1.2 TSI 105HP DSG 7 sp Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Style 1.2 TSI 105HP Start Stop Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Style 1.4 16v 85HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Style 1.6 16v 105HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6J Style 1.6 16v 105HP DSG 7 speeds Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.2 TDI Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.2 TDI CR 75HP Reference Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.2 TDI CR 75HP Reference E-Ecomotive Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.2 TDI CR 75HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI 105 Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 105HP FR Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 105HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 105HP Style Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 105HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 90HP Reference Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 90HP Reference DSG 7 Speeds Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 90HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 90HP Reference I-TECH 30 Anniversary DSG Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 90HP Style Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 90HP Style DSG 7 Speeds Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 90HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 1.6 TDI CR 90HP Style I-TECH 30 Anniversary DSG Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 2.0 TDI CR 143HP FR Ficha Tecnica",
+              "Cilindrada": "1968 cm3 (120.1 cu-in)",
+              "Potencia": "143 hp / 105 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J 2.0 TDI CR 143HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1968 cm3 (120.1 cu-in)",
+              "Potencia": "143 hp / 105 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J Ecomotive 1.2 TDI CR 75HP Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J ECOMOTIVE 1.2 TDI CR 75HP DPF Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J FR 2.0 TDI CR 143HP DPF Ficha Tecnica",
+              "Cilindrada": "1968 cm3 (120.1 cu-in)",
+              "Potencia": "143 hp / 105 kW",
+              "Año": "2009"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J FR 2.0 TDI CR 143HP DPF Ficha Tecnica",
+              "Cilindrada": "1968 cm3 (120.1 cu-in)",
+              "Potencia": "143 hp / 105 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J Music 1.6 TDI CR 90HP DPF Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2009"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J Reference 1.2 TDI 75HP DPF Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J Reference 1.2 TDI CR 75HP DPF Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J Reference 1.6 TDI CR 90HP DPF Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J Sport 1.6 TDI CR 105HP DPF Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J Style 1.6 TDI CR 105HP DPF Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6J Style 1.6 TDI CR 90HP DPF Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "82 hp / 60 kW",
+              "Otros": "Ibiza 6J 1.6 GLP 82HP Reference Ficha Tecnica",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "82 hp / 60 kW",
+              "Otros": "Ibiza 6J 1.6 GLP 82HP Style Ficha Tecnica",
+              "Año": "2012"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 4 (6J/6P) (2008 - 2017)",
+          "specifications": {
+            "Batalla:": "246.9 cm / 97.2 pulgadas",
+            "Consumos Medio:": "de 3.4 L/100 km / 83 MPG UK / 69 MPG US a 3.8 L/100 km / 74 MPG UK / 62 MPG US",
+            "Alto:": "142.8 cm / 56.22 pulgadas",
+            "Emisiones de CO2:": "de 89 a 149 g/Km",
+            "Potencia:": "de 60 PS / 59 HP / 44 kW a 150 PS / 148 HP / 110 kW",
+            "Largo:": "403.4 cm / 158.82 pulgadas",
+            "Ancho:": "169.3 cm / 66.65 pulgadas",
+            "Período de producción:": "de 2008 a 2017",
+            "Cilindrada:": "de 1197 cm3 / 73 cu-in a 1968 cm3 / 120.1 cu-in"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M1390/Ibiza-6J"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza 6P 1.0 75HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6P 1.0 Eco TSI 110HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6P 1.0 Eco TSI 110HP DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6P 1.0 Eco TSI 95HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "95 hp / 70 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6P 1.2 TSI 90HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6P 1.4 Eco TSI ACT 150HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1395 cm3 (85.1 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2016"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6P 1.4 TDI 105HP Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6P 1.4 TDI 75HP Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6P 1.4 TDI 90HP Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6P 1.4 TDI 90HP DSG Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2016"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 4 (6J/6P) (2008 - 2017)",
+          "specifications": {
+            "Batalla:": "246.9 cm / 97.2 pulgadas",
+            "Consumos Medio:": "de 3.4 L/100 km / 83 MPG UK / 69 MPG US a 5.2 L/100 km / 54 MPG UK / 45 MPG US",
+            "Alto:": "144.1 cm / 56.73 pulgadas",
+            "Emisiones de CO2:": "de 88 a 118 g/Km",
+            "Potencia:": "de 75 PS / 74 HP / 55 kW a 150 PS / 148 HP / 110 kW",
+            "Largo:": "408.2 cm / 160.71 pulgadas",
+            "Ancho:": "169.3 cm / 66.65 pulgadas",
+            "Período de producción:": "de 2008 a 2017",
+            "Cilindrada:": "de 999 cm3 / 61 cu-in a 1422 cm3 / 86.8 cu-in",
+            "Peso:": "de 1049 kg / 2313 lbs a 1165 kg / 2568 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M13358/Ibiza-6P"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 12v 60HP Reference Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1198 cm3 (73.1 cu-in)",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 12v 70HP Reference Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1198 cm3 (73.1 cu-in)",
+              "Potencia": "69 hp / 51 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 12v 70HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1198 cm3 (73.1 cu-in)",
+              "Potencia": "69 hp / 51 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 105HP FR Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 105HP FR DSG 7 speed Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 105HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 105HP FR I-TECH 30 Anniversary DSG 7 Speeds Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 105HP Style Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 105HP Style DSG 7 speed Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 105HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 105HP Style I-TECH 30 Anniversary DSG 7 Speeds Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 85HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.2 TSI 85HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.4 85HP Reference Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.4 85HP Style Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.4 TSI 150HP FR DSG 7 speed Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.4 TSI 150HP FR I-TECH 30 Anniversary DSG 7 Speeds Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.4 TSI ACT 140HP FR Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1395 cm3 (85.1 cu-in)",
+              "Potencia": "140 hp / 103 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC 1.4 TSI ACT 140HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1395 cm3 (85.1 cu-in)",
+              "Potencia": "140 hp / 103 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.2 TDI CR 75HP Reference Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.2 TDI CR 75HP Reference E-Ecomotive Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.2 TDI CR 75HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 105HP FR Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 105HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 105HP Style Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 105HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 90HP Reference Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 90HP Reference DSG 7 Speeds Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 90HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 90HP Style Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 90HP Style DSG 7 Speeds Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 90HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 1.6 TDI CR 90HP Style I-TECH 30 Anniversary DSG 7 Speeds Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 2.0 TDI CR 143HP FR Ficha Tecnica",
+              "Cilindrada": "1968 cm3 (120.1 cu-in)",
+              "Potencia": "143 hp / 105 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC 2.0 TDI CR 143HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1968 cm3 (120.1 cu-in)",
+              "Potencia": "143 hp / 105 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "82 hp / 60 kW",
+              "Otros": "Ibiza SC 1.6 GLP 82HP Reference Ficha Tecnica",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "82 hp / 60 kW",
+              "Otros": "Ibiza SC 1.6 GLP 82HP Style Ficha Tecnica",
+              "Año": "2012"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 4 (6J/6P) (2008 - 2017)",
+          "specifications": {
+            "Batalla:": "246.9 cm / 97.2 pulgadas",
+            "Alto:": "142.8 cm / 56.22 pulgadas",
+            "Emisiones de CO2:": "de 89 a 139 g/Km",
+            "Potencia:": "de 60 PS / 59 HP / 44 kW a 150 PS / 148 HP / 110 kW",
+            "Largo:": "404.3 cm / 159.17 pulgadas",
+            "Ancho:": "169.3 cm / 66.65 pulgadas",
+            "Período de producción:": "de 2008 a 2017",
+            "Cilindrada:": "de 1197 cm3 / 73 cu-in a 1968 cm3 / 120.1 cu-in",
+            "Peso:": "de 1049 kg / 2313 lbs a 1254 kg / 2765 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M6394/Ibiza-SC"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza SC (6P) 1.0 75HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC (6P) 1.0 Eco TSI 110HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC (6P) 1.0 Eco TSI 110HP DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC (6P) 1.0 Eco TSI 95HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "95 hp / 70 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC (6P) 1.2 TSI 90HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC (6P) 1.4 Eco TSI ACT 150HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1395 cm3 (85.1 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2016"
+            },
+            {
+              "Motores de Gasolina": "Ibiza SC (6P) 1.8 TSI 192HP CUPRA Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1798 cm3 (109.7 cu-in)",
+              "Potencia": "192 hp / 141 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC (6P) 1.4 TDI 105HP Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC (6P) 1.4 TDI 75HP Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC (6P) 1.4 TDI 90HP Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza SC (6P) 1.4 TDI 90HP DSG Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2016"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 4 (6J/6P) (2008 - 2017)",
+          "specifications": {
+            "Batalla:": "246.9 cm / 97.2 pulgadas",
+            "Consumos Medio:": "de 3.4 L/100 km / 83 MPG UK / 69 MPG US a 6 L/100 km / 47 MPG UK / 39 MPG US",
+            "Alto:": "142.4 cm / 56.06 pulgadas",
+            "Emisiones de CO2:": "de 88 a 139 g/Km",
+            "Potencia:": "de 75 PS / 74 HP / 55 kW a 192 PS / 189 HP / 141 kW",
+            "Largo:": "406.6 cm / 160.08 pulgadas",
+            "Ancho:": "169.3 cm / 66.65 pulgadas",
+            "Período de producción:": "de 2008 a 2017",
+            "Cilindrada:": "de 999 cm3 / 61 cu-in a 1798 cm3 / 109.7 cu-in",
+            "Peso:": "de 1049 kg / 2313 lbs a 1260 kg / 2778 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M13357/Ibiza-SC-(6P)"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 105HP FR Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 105HP FR DSG 7 speed Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 105HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 105HP FR I-TECH 30 Anniversary DSG 7 Speeds Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 105HP Style Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 105HP Style DSG 7 speed Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 105HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 105HP Style I-TECH 30 Anniversary DSG 7 Speeds Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 16v 105HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 16v 105HP DSG 7 speeds Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 16v 105HP Ecomotive Technology Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 85HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.2 TSI 85HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.4 85HP Reference Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.4 85HP Style Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2012"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.4 TSI ACT 140HP FR Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1395 cm3 (85.1 cu-in)",
+              "Potencia": "140 hp / 103 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST 1.4 TSI ACT 140HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1395 cm3 (85.1 cu-in)",
+              "Potencia": "140 hp / 103 kW",
+              "Año": "2014"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST Reference 1.2 12v 70HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1198 cm3 (73.1 cu-in)",
+              "Potencia": "69 hp / 51 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST Reference 1.4 16v 85HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST Sport 1.2 TSI 105HP DSG 7 sp Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST Sport 1.2 TSI 105HP Start Stop Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST Style 1.2 TSI 105HP DSG 7 sp Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST Style 1.2 TSI 105HP Start Stop Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST Style 1.4 16v 85HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.2 TDI 75HP DPF Ecomotive Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.2 TDI CR 75HP Reference Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.2 TDI CR 75HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 105HP FR Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 105HP FR I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 105HP Style Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 105HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 90HP Reference Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 90HP Reference DSG 7 Speeds Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 90HP Reference I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 90HP Style Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2012"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 90HP Style DSG 7 Speeds Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 90HP Style I-TECH 30 Anniversary Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST 1.6 TDI CR 90HP Style I-TECH 30 Anniversary DSG 7 Speeds Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2014"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST Ecomotive 1.2 TDI CR 75HP Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST Reference 1.2 TDI 75HP DPF Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST Reference 1.2 TDI CR 75HP DPF Ficha Tecnica",
+              "Cilindrada": "1199 cm3 (73.2 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST Reference 1.6 TDI CR 90HP DPF Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST Sport 1.6 TDI CR 105HP DPF Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST Style 1.6 TDI CR 105HP DPF Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2010"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST Style 1.6 TDI CR 90HP DPF Ficha Tecnica",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2010"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 4 (6J/6P) (2008 - 2017)",
+          "specifications": {
+            "Batalla:": "246.9 cm / 97.2 pulgadas",
+            "Consumos Medio:": "de 3.4 L/100 km / 83 MPG UK / 69 MPG US a 5.1 L/100 km / 55 MPG UK / 46 MPG US",
+            "Alto:": "144.5 cm / 56.89 pulgadas",
+            "Emisiones de CO2:": "de 89 a 139 g/Km",
+            "Potencia:": "de 69 PS / 68 HP / 51 kW a 140 PS / 138 HP / 103 kW",
+            "Largo:": "422.7 cm / 166.42 pulgadas",
+            "Ancho:": "169.3 cm / 66.65 pulgadas",
+            "Período de producción:": "de 2008 a 2017",
+            "Cilindrada:": "de 1197 cm3 / 73 cu-in a 1598 cm3 / 97.5 cu-in",
+            "Peso:": "de 1110 kg / 2447 lbs a 1244 kg / 2743 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M6395/Ibiza-ST"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza ST (6P) 1.0 75HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST (6P) 1.0 Eco TSI 110HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST (6P) 1.0 Eco TSI 110HP DSG Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST (6P) 1.2 TSI 90HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1197 cm3 (73 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2015"
+            },
+            {
+              "Motores de Gasolina": "Ibiza ST (6P) 1.4 Eco TSI ACT 150HP Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1395 cm3 (85.1 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2016"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST (6P) 1.4 TDI 105HP Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST (6P) 1.4 TDI 75HP Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST (6P) 1.4 TDI 90HP Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2015"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza ST (6P) 1.4 TDI 90HP DSG Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "2016"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 4 (6J/6P) (2008 - 2017)",
+          "specifications": {
+            "Batalla:": "246.9 cm / 97.2 pulgadas",
+            "Consumos Medio:": "de 3.5 L/100 km / 81 MPG UK / 67 MPG US a 5.3 L/100 km / 53 MPG UK / 44 MPG US",
+            "Alto:": "144.5 cm / 56.89 pulgadas",
+            "Emisiones de CO2:": "de 90 a 120 g/Km",
+            "Potencia:": "de 75 PS / 74 HP / 55 kW a 150 PS / 148 HP / 110 kW",
+            "Largo:": "423.6 cm / 166.77 pulgadas",
+            "Ancho:": "169.3 cm / 66.65 pulgadas",
+            "Período de producción:": "de 2008 a 2017",
+            "Cilindrada:": "de 999 cm3 / 61 cu-in a 1422 cm3 / 86.8 cu-in",
+            "Peso:": "de 1099 kg / 2423 lbs a 1233 kg / 2718 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M8120/Ibiza-ST-(6P)"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza 6L 1.2 12v Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1198 cm3 (73.1 cu-in)",
+              "Potencia": "69 hp / 51 kW",
+              "Año": "2002"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6L 1.4 16v 100 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "101 hp / 74 kW",
+              "Año": "2002"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6L 1.4 16v 75 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2002"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6L 1.4 16v 85 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "2006"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6L 1.6 16v Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "105 hp / 77 kW",
+              "Año": "2007"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6L 1.8 20VT 150 FR Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1781 cm3 (108.7 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "2004"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6L 1.8 20VT 180 Cupra Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1781 cm3 (108.7 cu-in)",
+              "Potencia": "180 hp / 132 kW",
+              "Año": "2004"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6L 1.8 20VT 180 Cupra Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1781 cm3 (108.7 cu-in)",
+              "Potencia": "180 hp / 132 kW",
+              "Año": "2006"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6L 2.0 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1984 cm3 (121.1 cu-in)",
+              "Potencia": "115 hp / 85 kW",
+              "Año": "2003"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6L 1.4 TDI 70 Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "69 hp / 51 kW",
+              "Año": "2005"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6L 1.4 TDI 80 Ficha Tecnica",
+              "Cilindrada": "1422 cm3 (86.8 cu-in)",
+              "Potencia": "80 hp / 59 kW",
+              "Año": "2005"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6L 1.9 SDi Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "64 hp / 47 kW",
+              "Año": "2002"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6L 1.9 TDi 100 Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "101 hp / 74 kW",
+              "Año": "2002"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6L 1.9 TDi 130 Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "131 hp / 96 kW",
+              "Año": "2002"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6L 1.9 TDi 160 Cupra Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "160 hp / 118 kW",
+              "Año": "2004"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6L 1.9 TDi 160 Cupra Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "160 hp / 118 kW",
+              "Año": "2006"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 3 (6L) (2002 - 2008)",
+          "specifications": {
+            "Batalla:": "246.0 cm / 96.85 pulgadas",
+            "Consumos Medio:": "4.9 L/100 km / 58 MPG UK / 48 MPG US",
+            "Alto:": "144.1 cm / 56.73 pulgadas",
+            "Potencia:": "de 64 PS / 63 HP / 47 kW a 180 PS / 178 HP / 132 kW",
+            "Peso de remolque:": "800 kg / 1764 lbs",
+            "Largo:": "395.3 cm / 155.63 pulgadas",
+            "Ancho:": "169.8 cm / 66.85 pulgadas",
+            "Período de producción:": "de 2002 a 2008",
+            "Cilindrada:": "de 1198 cm3 / 73.1 cu-in a 1984 cm3 / 121.1 cu-in",
+            "Peso:": "de 1044 kg / 2302 lbs a 1290 kg / 2844 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M308/Ibiza-6L"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.0i 45 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1043 cm3 (63.6 cu-in)",
+              "Potencia": "45 hp / 33 kW",
+              "Año": "1996"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.0i 50 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1000 cm3 (61 cu-in)",
+              "Potencia": "50 hp / 37 kW",
+              "Año": "1996"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.3i Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1272 cm3 (77.6 cu-in)",
+              "Potencia": "54 hp / 40 kW",
+              "Año": "1993"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.4i Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1391 cm3 (84.9 cu-in)",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "1994"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.4i Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "1996"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.6i Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "1993"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.6i Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "1996"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.6i 100 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1595 cm3 (97.3 cu-in)",
+              "Potencia": "100 hp / 74 kW",
+              "Año": "1996"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.8 GTi 16v Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1781 cm3 (108.7 cu-in)",
+              "Potencia": "129 hp / 95 kW",
+              "Año": "1994"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.8i Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1781 cm3 (108.7 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1993"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 1.8i auto Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1781 cm3 (108.7 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1996"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 2.0 GTi Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1984 cm3 (121.1 cu-in)",
+              "Potencia": "115 hp / 85 kW",
+              "Año": "1993"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 2.0 GTi Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1984 cm3 (121.1 cu-in)",
+              "Potencia": "116 hp / 85 kW",
+              "Año": "1996"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 2.0i 16v GTi Cupra Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1984 cm3 (121.1 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "1996"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K 2.0i 16v GTi Cupra-2 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1984 cm3 (121.1 cu-in)",
+              "Potencia": "150 hp / 110 kW",
+              "Año": "1998"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K 1.9 D Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "68 hp / 50 kW",
+              "Año": "1993"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K 1.9 SDi Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "64 hp / 47 kW",
+              "Año": "1997"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K 1.9 TD Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "1994"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K 1.9 TDi 110 Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "1997"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K 1.9 TDi 90 Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1996"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K 1.9D Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "64 hp / 47 kW",
+              "Año": "1996"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 2 (6k) (1993 - 2002)",
+          "specifications": {
+            "Batalla:": "244.0 cm / 96.06 pulgadas",
+            "Consumos Medio:": "de 5.8 L/100 km / 49 MPG UK / 41 MPG US a 9.2 L/100 km / 31 MPG UK / 26 MPG US",
+            "Alto:": "142.4 cm / 56.06 pulgadas",
+            "Potencia:": "de 45 PS / 44 HP / 33 kW a 150 PS / 148 HP / 110 kW",
+            "Largo:": "381.3 cm / 150.12 pulgadas",
+            "Ancho:": "164.0 cm / 64.57 pulgadas",
+            "Período de producción:": "de 1993 a 2002",
+            "Cilindrada:": "de 1000 cm3 / 61 cu-in a 1984 cm3 / 121.1 cu-in",
+            "Peso:": "de 845 kg / 1863 lbs a 1075 kg / 2370 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M1047/Ibiza-6K"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza 6K2 1.4 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1391 cm3 (84.9 cu-in)",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 1.4 16v Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1391 cm3 (84.9 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "2000"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 1.6 100 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1595 cm3 (97.3 cu-in)",
+              "Potencia": "100 hp / 74 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 1.6 75 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 1.8 20VT Cupra Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1781 cm3 (108.7 cu-in)",
+              "Potencia": "156 hp / 115 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 1.8 20VT Cupra R Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1781 cm3 (108.7 cu-in)",
+              "Potencia": "180 hp / 132 kW",
+              "Año": "2001"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 1.8 20VT Sport 3 doors Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1781 cm3 (108.7 cu-in)",
+              "Potencia": "156 hp / 115 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 3doors 1.0 Select Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "50 hp / 37 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 3doors 1.4 16V Stella Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 3doors 1.4 Select + DA Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 3doors 1.4 Stella Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 3doors 1.6 Signa Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1595 cm3 (97.3 cu-in)",
+              "Potencia": "101 hp / 74 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 3doors 1.6 Signa Aut. Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1595 cm3 (97.3 cu-in)",
+              "Potencia": "101 hp / 74 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 3doors 1.6 Sport Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1595 cm3 (97.3 cu-in)",
+              "Potencia": "101 hp / 74 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 3doors 1.6 Stella Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 5doors 1.0 Select Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "999 cm3 (61 cu-in)",
+              "Potencia": "50 hp / 37 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 5doors 1.4 16V Stella Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 5doors 1.4 Select + DA Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 5doors 1.4 Stella Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1390 cm3 (84.8 cu-in)",
+              "Potencia": "60 hp / 44 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 5doors 1.6 Signa Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1595 cm3 (97.3 cu-in)",
+              "Potencia": "101 hp / 74 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 5doors 1.6 Signa Aut. Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1595 cm3 (97.3 cu-in)",
+              "Potencia": "101 hp / 74 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 5doors 1.6 Sport Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1595 cm3 (97.3 cu-in)",
+              "Potencia": "101 hp / 74 kW",
+              "Año": "1999"
+            },
+            {
+              "Motores de Gasolina": "Ibiza 6K2 5doors 1.6 Stella Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1598 cm3 (97.5 cu-in)",
+              "Potencia": "75 hp / 55 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 1.9 SDi Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "68 hp / 50 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 1.9 TDi 110 Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 1.9 TDi 90 Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 3doors 1.9 SDi Select Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "68 hp / 50 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 3doors 1.9 SDi Stella Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "68 hp / 50 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 3doors 1.9 TDi Signa 110HP Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 3doors 1.9 TDi Sport Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 3doors 1.9 TDi Sport 110HP Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 3doors 1.9 TDi Stella Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 5doors 1.9 SDi Select Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "68 hp / 50 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 5doors 1.9 SDi Stella Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "68 hp / 50 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 5doors 1.9 TDi Signa 110HP Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 5doors 1.9 TDi Sport Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 5doors 1.9 TDi Sport 110HP Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "110 hp / 81 kW",
+              "Año": "1999"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza 6K2 5doors 1.9 TDi Stella Ficha Tecnica",
+              "Cilindrada": "1896 cm3 (115.7 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1999"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 2 (6k) (1993 - 2002)",
+          "specifications": {
+            "Batalla:": "244.0 cm / 96.06 pulgadas",
+            "Consumos Medio:": "de 4.9 L/100 km / 58 MPG UK / 48 MPG US a 8.4 L/100 km / 34 MPG UK / 28 MPG US",
+            "Alto:": "142.0 cm / 55.91 pulgadas",
+            "Potencia:": "de 50 PS / 49 HP / 37 kW a 180 PS / 178 HP / 132 kW",
+            "Largo:": "388.0 cm / 152.76 pulgadas",
+            "Ancho:": "164.0 cm / 64.57 pulgadas",
+            "Período de producción:": "de 1993 a 2002",
+            "Cilindrada:": "de 999 cm3 / 61 cu-in a 1896 cm3 / 115.7 cu-in",
+            "Peso:": "de 930 kg / 2050 lbs a 1158 kg / 2553 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M1048/Ibiza-6K2"
+        },
+        {
+          "table_versions": [
+            {
+              "Motores de Gasolina": "Ibiza I 1.2 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1193 cm3 (72.8 cu-in)",
+              "Potencia": "63 hp / 46 kW",
+              "Año": "1985"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 1.2i Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1193 cm3 (72.8 cu-in)",
+              "Potencia": "71 hp / 52 kW",
+              "Año": "1990"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 1.2i Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1193 cm3 (72.8 cu-in)",
+              "Potencia": "71 hp / 52 kW",
+              "Año": "1991"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 1.5 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1461 cm3 (89.2 cu-in)",
+              "Potencia": "86 hp / 63 kW",
+              "Año": "1984"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 1.5 SXi Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1461 cm3 (89.2 cu-in)",
+              "Potencia": "101 hp / 74 kW",
+              "Año": "1988"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 1.5i Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1461 cm3 (89.2 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1989"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 1.5i SX Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1461 cm3 (89.2 cu-in)",
+              "Potencia": "90 hp / 66 kW",
+              "Año": "1991"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 1.7 SXi Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "1675 cm3 (102.2 cu-in)",
+              "Potencia": "98 hp / 72 kW",
+              "Año": "1992"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 900 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "903 cm3 (55.1 cu-in)",
+              "Potencia": "44 hp / 32 kW",
+              "Año": "1985"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 900 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "903 cm3 (55.1 cu-in)",
+              "Potencia": "44 hp / 32 kW",
+              "Año": "1989"
+            },
+            {
+              "Motores de Gasolina": "Ibiza I 900 Ficha Tecnica",
+              "Comparar con otro coche": "",
+              "Cilindrada": "903 cm3 (55.1 cu-in)",
+              "Potencia": "44 hp / 32 kW",
+              "Año": "1991"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza I 1.7D Ficha Tecnica",
+              "Cilindrada": "1714 cm3 (104.6 cu-in)",
+              "Potencia": "56 hp / 41 kW",
+              "Año": "1984"
+            },
+            {
+              "Comparar con otro coche": "",
+              "Motores Diesel": "Ibiza I 1.7D Ficha Tecnica",
+              "Cilindrada": "1714 cm3 (104.6 cu-in)",
+              "Potencia": "56 hp / 41 kW",
+              "Año": "1991"
+            }
+          ],
+          "actualFinalModelName": "Ibiza 1 (021A) (1984 - 1993)",
+          "specifications": {
+            "Batalla:": "245.0 cm / 96.46 pulgadas",
+            "Consumos Medio:": "de 6.5 L/100 km / 43 MPG UK / 36 MPG US a 7.3 L/100 km / 39 MPG UK / 32 MPG US",
+            "Alto:": "139.0 cm / 54.72 pulgadas",
+            "Potencia:": "de 44 PS / 43 HP / 32 kW a 101 PS / 100 HP / 74 kW",
+            "Largo:": "364.0 cm / 143.31 pulgadas",
+            "Ancho:": "161.0 cm / 63.39 pulgadas",
+            "Período de producción:": "de 1984 a 1993",
+            "Cilindrada:": "de 903 cm3 / 55.1 cu-in a 1714 cm3 / 104.6 cu-in",
+            "Peso:": "de 850 kg / 1874 lbs a 949 kg / 2092 lbs"
+          },
+          "url": "https://www.ultimatespecs.com/es/car-specs/Seat/M90/Ibiza-I"
+        }
+      ],
+      "imageUrl": "https://www.ultimatespecs.com/cargallery/17/11961/w170_Seat-Ibiza-2022-1.jpg",
+      "url": "https://www.ultimatespecs.com/es/car-specs/Seat-models/Seat-Ibiza"
+    }
+  ]
+}

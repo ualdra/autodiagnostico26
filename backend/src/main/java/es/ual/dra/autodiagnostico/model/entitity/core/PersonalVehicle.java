@@ -9,6 +9,7 @@ import lombok.*;
 @Table(name = "personal_vehicle")
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
