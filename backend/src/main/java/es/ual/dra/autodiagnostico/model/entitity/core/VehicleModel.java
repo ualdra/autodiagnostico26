@@ -1,5 +1,8 @@
 package es.ual.dra.autodiagnostico.model.entitity.core;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,7 +23,13 @@ public class VehicleModel {
     @JoinColumn(name = "idVehicle")
     private Vehicle vehicle;
 
+    private String modelName;
+
     private TransmissionType transmission;
+
+    @OneToMany(mappedBy = "vehicleModel", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private List<PersonalVehicle> personalVehicles = new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "idEngine")

@@ -1,11 +1,19 @@
 @startuml
 
 entity Vehicle {
-* PK idVehicle : Integer
----
-name : String
-brand : String
-image : String
+  * PK idVehicle : Integer
+  ---
+  name : String
+  brand : String
+  image : String
+  wheelbase : String
+  averageConsumptionPer100km : String
+  height : String
+  length : String
+  width : String
+  weight : String
+  periodOfProduction : String
+  engineDisplacement : String
 }
 
 note right: A vehicle is the most abstract entity, for instance, SEAT IBIZA 6K2
@@ -13,8 +21,12 @@ note right: A vehicle is the most abstract entity, for instance, SEAT IBIZA 6K2
 entity VehicleModel {
     PK idVehicleModel : Integer
     ---
+    modelName : String
     FK idVehicle : Integer
     FK idEngine : Integer 
+    horsePower : String
+    approximatedYearOfBuilt : Integer
+    actualEngineDisplacement : String
     transmission : TransmissionType
 }
 

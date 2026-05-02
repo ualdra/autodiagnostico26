@@ -10,4 +10,5 @@ import es.ual.dra.autodiagnostico.model.entitity.core.Vehicle;
  */
 @Repository
 public interface VehicleRepository extends JpaRepository<Vehicle, Long> {
+    java.util.Optional<Vehicle> findByNameAndBrand(String name, String brand);
 }

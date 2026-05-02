@@ -27,6 +27,18 @@ public class Vehicle {
     // Modelo del vehículo
     private String name;
 
+    // Estos atributos existen porque se sacaron en el scraping. Su tipado
+    // como String no es el más adecuado, pero se dejará así por simplicidad. Al
+    // menos por ahora.
+    private String wheelbase;
+    private String averageConsumptionPer100km;
+    private String height;
+    private String length;
+    private String width;
+    private String weight;
+    private String periodOfProduction;
+    private String engineDisplacement;
+
     @OneToMany(mappedBy = "vehicle", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
     private List<VehicleModel> vehicleModels = new ArrayList<>();
