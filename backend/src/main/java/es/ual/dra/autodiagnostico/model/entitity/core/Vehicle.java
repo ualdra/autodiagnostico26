@@ -12,6 +12,7 @@ import java.util.List;
 @Table(name = "vehicle")
 @Getter
 @Setter
+@ToString(exclude = "vehicleModels")
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

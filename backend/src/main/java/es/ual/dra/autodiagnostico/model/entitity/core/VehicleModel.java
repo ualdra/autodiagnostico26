@@ -10,6 +10,7 @@ import lombok.*;
 @Table(name = "vehicle_model")
 @Getter
 @Setter
+@ToString(exclude = {"vehicle", "personalVehicles", "engine"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder

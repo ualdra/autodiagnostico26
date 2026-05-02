@@ -38,26 +38,42 @@ public class DataPopulationServiceIntegrationTest {
     public void testPopulateFromJson() throws IOException {
         // Path to the sample JSON created in T005
         String sampleJsonPath = "src/test/resources/sample-seat.json";
-        
         // When
         dataPopulationService.populateFromFile(sampleJsonPath, "Seat");
 
         // Then
         List<Vehicle> vehicles = vehicleRepository.findAll();
+        System.out.println("\n--- POPULATED VEHICLES ---");
+        vehicles.forEach(v -> {
+            System.out.println("Vehicle: " + v);
+        });
         assertFalse(vehicles.isEmpty(), "Should have populated vehicles");
         
-        Vehicle vehicle = vehicles.stream()
+        Vehicle mii = vehicles.stream()
                 .filter(v -> v.getName().equals("Seat Mii Ficha Tecnica"))
                 .findFirst()
                 .orElseThrow();
         
-        assertEquals("Seat", vehicle.getBrand());
-        assertEquals("242.1 cm / 95.31 pulgadas", vehicle.getWheelbase());
+        assertEquals("Seat", mii.getBrand());
+        assertEquals("242.1 cm / 95.31 pulgadas", mii.getWheelbase());
+
+        // Cycle/Check for Ibiza
+        System.out.println("\n--- IBIZA CYCLE CHECK ---");
+        List<Vehicle> ibizas = vehicles.stream()
+                .filter(v -> v.getName().toLowerCase().contains("ibiza"))
+                .toList();
+        ibizas.forEach(v -> System.out.println("Found Ibiza variant: " + v));
+
+        assertTrue(ibizas.size() == 6, "Should have 6 Ibiza variants");
 
         List<VehicleModel> models = vehicleModelRepository.findAll();
-        assertTrue(models.size() >= 2, "Should have at least 2 models for Mii");
+        System.out.println("\n--- POPULATED VEHICLE MODELS ---");
+        models.forEach(m -> System.out.println("Model: " + m));
+        assertTrue(models.size() >= 2, "Should have at least models for Mii and Ibiza");
 
         List<Engine> engines = engineRepository.findAll();
+        System.out.println("\n--- POPULATED ENGINES ---");
+        engines.forEach(e -> System.out.println("Engine: " + e));
         assertFalse(engines.isEmpty(), "Should have populated engines");
     }
 }
