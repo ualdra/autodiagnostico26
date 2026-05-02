@@ -1,4 +1,4 @@
-package es.ual.dra.autodiagnostico.model.entitity;
+package es.ual.dra.autodiagnostico.model.entitity.core;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,6 +10,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import java.util.List;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.JoinTable;
@@ -23,6 +24,7 @@ import jakarta.persistence.FetchType;
 @Table(name = "product")
 @Getter
 @Setter
+@ToString(exclude = "vehicles")
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -39,9 +41,9 @@ public class Product {
     private String description;
 
     // Precio del producto
-    private Double price;
+    private Double price; // Puede ser nulo
 
-    private String image;
+    private String image; // Puede ser nulo
 
     // Vehículo al que pertenece el producto
     @ManyToMany(fetch = FetchType.LAZY)

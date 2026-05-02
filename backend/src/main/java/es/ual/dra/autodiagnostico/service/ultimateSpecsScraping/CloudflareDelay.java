@@ -1,4 +1,4 @@
-package es.ual.dra.autodiagnostico.service;
+package es.ual.dra.autodiagnostico.service.ultimateSpecsScraping;
 
 import java.util.concurrent.ThreadLocalRandom;
 

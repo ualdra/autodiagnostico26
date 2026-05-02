@@ -1,4 +1,4 @@
-package es.ual.dra.autodiagnostico.service;
+package es.ual.dra.autodiagnostico.service.ultimateSpecsScraping;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +27,9 @@ import java.util.Map;
 import javax.imageio.ImageIO;
 
 /**
- * Servicio encargado de realizar el scraping de datos de vehículos
+ * Servicio encargado de realizar el scraping de datos de vehículos.
+ * 
+ * Solo debe de correrse una vez.
  */
 @Service
 @RequiredArgsConstructor

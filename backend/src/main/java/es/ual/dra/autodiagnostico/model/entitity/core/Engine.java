@@ -1,4 +1,4 @@
-package es.ual.dra.autodiagnostico.model.entitity;
+package es.ual.dra.autodiagnostico.model.entitity.core;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,9 +15,11 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString(exclude = "vehicleModels")
 @Entity
 @Table(name = "engine")
 @NoArgsConstructor

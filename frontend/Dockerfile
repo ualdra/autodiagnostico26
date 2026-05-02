@@ -35,4 +35,3 @@ RUN if [ -f /usr/share/nginx/html/index.csr.html ]; then cp /usr/share/nginx/htm
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
-

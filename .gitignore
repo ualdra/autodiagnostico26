@@ -3,6 +3,11 @@
 # Frontend (Angular) + Backend (Spring Boot + Maven)
 # ==========================================
 
+# ============  Agentic SDD files from Speckit ============ 
+.agent/
+.specify/
+.specs/
+
 # ============ DEPENDENCIAS ============
 node_modules/
 **/node_modules/

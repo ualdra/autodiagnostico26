@@ -1,22 +1,36 @@
+@startuml
+
 entity Vehicle {
-* PK idVehicle : Integer
----
-name : String
-brand : String
-image : String
+  * PK idVehicle : Integer
+  ---
+  name : String
+  brand : String
+  image : String
+  wheelbase : String
+  averageConsumptionPer100km : String
+  height : String
+  length : String
+  width : String
+  weight : String
+  periodOfProduction : String
+  engineDisplacement : String
 }
+
+note right: A vehicle is the most abstract entity, for instance, SEAT IBIZA 6K2
 
 entity VehicleModel {
     PK idVehicleModel : Integer
     ---
+    modelName : String
     FK idVehicle : Integer
     FK idEngine : Integer 
+    horsePower : String
+    approximatedYearOfBuilt : Integer
+    actualEngineDisplacement : String
     transmission : TransmissionType
-    builtDate : Date
-    VIN : String
-    plate : String
-    
 }
+
+note right: A vehicle model \nis an abstract vehicle instance,\n i.e, it's not an actual car someone\n drives, rather it's a specific model someone\n could buy. For instance, in 2001 you could\n buy a SEAT IBIZA 6K2 1.9 SDI, which is a\ninstance of a SEAT IBIZA 6K2 
 
 entity Engine {
    * PK name : String
@@ -32,6 +46,17 @@ entity Product {
     price : Double
     image : String
 }
+
+entity PersonalVehicle {
+  * PK idPersonalVehicle : Integer
+  ---
+  FK idVehicleModel : Integer
+    builtDate : Date
+    VIN : String
+    plate : String
+}
+
+note right: A Personal Vehicle is an actual\n vehicle someone drives. For \ninstance, a PersonalVehicle is\n my SEAT IBIZA 6K2 1.9 SDI, with\n an actual VIN number and plate.
 
 
 enum EngineType {
@@ -64,6 +89,7 @@ Vehicle ||..|{ VehicleModel
 VehicleModel }|..|| Engine
 VehicleModel ..> TransmissionType
 VehicleModel ||..o{ VM_Has_Product
+VehicleModel ||..o{ PersonalVehicle: "appears"
 Product ||..o{ VM_Has_Product
 Engine ..> EngineType
 

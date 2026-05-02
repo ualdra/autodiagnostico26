@@ -1,6 +1,7 @@
-package es.ual.dra.autodiagnostico.model.entitity;
+package es.ual.dra.autodiagnostico.model.entitity.core;
 
-import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -9,6 +10,7 @@ import lombok.*;
 @Table(name = "vehicle_model")
 @Getter
 @Setter
+@ToString(exclude = {"vehicle", "personalVehicles", "engine"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -22,13 +24,15 @@ public class VehicleModel {
     @JoinColumn(name = "idVehicle")
     private Vehicle vehicle;
 
+    private String modelName;
+
     private TransmissionType transmission;
+
+    @OneToMany(mappedBy = "vehicleModel", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private List<PersonalVehicle> personalVehicles = new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "idEngine")
     private Engine engine;
-
-    private LocalDate buildDate;
-    private String VIN;
-    private String plate;
 }
